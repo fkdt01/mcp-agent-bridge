@@ -1,0 +1,30 @@
+# Secrets and config
+config.yaml
+*.env
+.env
+
+# Runtime data
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

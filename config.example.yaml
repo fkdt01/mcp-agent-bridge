@@ -1,0 +1,40 @@
+# MCP Agent Bridge — Configuration Template
+# Copy this to config.yaml and fill in your values.
+# config.yaml is excluded from git — never commit secrets!
+
+server:
+  # Bridge server bind address (use 127.0.0.1 for local-only)
+  host: "127.0.0.1"
+  # Bridge server port
+  port: 18900
+
+openclaw:
+  # Path to the openclaw binary
+  # - If openclaw is in PATH, just use "openclaw"
+  # - Otherwise specify the full path, e.g. "/usr/local/bin/openclaw"
+  cli_path: "openclaw"
+  # Maximum seconds to wait for a CLI subprocess (default 60)
+  timeout: 60
+  # Default image generation provider (openai, google, fal, xai, etc.)
+  image_provider: "openai"
+  # Default web search provider (duckduckgo, ollama, perplexity, etc.)
+  web_search_provider: "duckduckgo"
+  # Default TTS provider (microsoft, openai, etc.)
+  tts_provider: "microsoft"
+
+hermes:
+  # Hermes Agent API Server endpoint
+  api_url: "http://127.0.0.1:8888"
+  # API key for authentication — set via HERMES_API_KEY env var or here
+  # IMPORTANT: Never commit this value to git!
+  api_key: ""
+  # Default message channel (feishu, weixin, telegram, discord, etc.)
+  default_channel: "feishu"
+
+memory:
+  # Storage backend: sqlite (recommended) or json
+  backend: "sqlite"
+  # Database file path (relative to project root or absolute)
+  db_path: "data/bridge_memory.db"
+  # Maximum entries per key (older entries auto-pruned)
+  max_history_per_key: 50
