@@ -6,7 +6,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/nicepkg/mcp-agent-bridge.git
+git clone https://github.com/fkdt01/mcp-agent-bridge.git
 cd mcp-agent-bridge
 
 # 创建虚拟环境
@@ -114,8 +114,7 @@ pytest --cov=bridge tests/
 
 ## 问题反馈
 
-- Bug 报告: [GitHub Issues](https://github.com/nicepkg/mcp-agent-bridge/issues)
-- 功能建议: [GitHub Discussions](https://github.com/nicepkg/mcp-agent-bridge/discussions)
+- Bug 报告 / 功能建议: [fkdt01@vip.qq.com](mailto:fkdt01@vip.qq.com)
 
 ## 许可证
 

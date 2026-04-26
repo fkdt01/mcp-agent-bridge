@@ -50,7 +50,7 @@
 ### 安装
 
 ```bash
-git clone https://github.com/nicepkg/mcp-agent-bridge.git
+git clone https://github.com/fkdt01/mcp-agent-bridge.git
 cd mcp-agent-bridge
 pip install -e .
 ```
