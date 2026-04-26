@@ -7,7 +7,7 @@ A lightweight MCP (Model Context Protocol) bridge server that enables **Hermes A
 ```
 ┌─────────────┐         ┌──────────────────┐         ┌─────────────┐
 │   Hermes     │  MCP    │  Agent Bridge    │  CLI/   │  OpenClaw    │
-│  (讯飞Astron) │◄───────►│  (FastMCP SSE)   │◄───────►│  (DoubaoSeed)│
+│   Agent     │◄───────►│  (FastMCP SSE)   │◄───────►│    CLI      │
 │              │  client │  Port :18900     │  HTTP   │              │
 │  Feishu/WX   │         │                  │         │  Image/Web   │
 │  Memory/Plan │         │  Shared Memory   │         │  TTS/Video   │
